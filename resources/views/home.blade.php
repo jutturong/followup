@@ -16,40 +16,43 @@
     <div id="collapseOne" class="accordion-collapse collapse show">
       <div class="accordion-body">
 
-        <div class="row row-cols-1 row-cols-md-2 g-4">
+        <div class="row row-cols-1 row-cols-md-4 g-4">
           <div class="col">
             <div class="card h-100">
-              <div class="card-body">
+              <div class="card-body text-center d-flex flex-column justify-content-center align-items-center">
                 <h5 class="card-title">เพิ่มข้อมูล</h5>
                 <p class="card-text">จัดการเพิ่มข้อมูลใหม่</p>
-                <a href="#" class="btn btn-outline-secondary">เพิ่มข้อมูล</a>
+                <a href="#" class="btn btn-outline-secondary"><i class="bi bi-folder-plus fs-1 text-primary"></i></a>
               </div>
             </div>
           </div>
 
           <div class="col">
             <div class="card h-100">
-              <div class="card-body">
+              <div class="card-body text-center d-flex flex-column justify-content-center align-items-center">
                 <h5 class="card-title">กำหนดสิทธิ์การใช้งาน</h5>
                 <p class="card-text">จัดการสิทธิ์และบทบาทผู้ใช้งาน</p>
+                <a href="#" class="btn btn-outline-secondary"><i class="bi bi bi-bag-plus fs-1 text-secondary"></i></a>
               </div>
             </div>
           </div>
 
           <div class="col">
             <div class="card h-100">
-              <div class="card-body">
+              <div class="card-body text-center d-flex flex-column justify-content-center align-items-center">
                 <h5 class="card-title">ตรวจสอบสถานะ Timeline</h5>
                 <p class="card-text">ติดตามความคืบหน้าของโครงการ</p>
+                <a href="#" class="btn btn-outline-secondary"><i class="bi bi-binoculars fs-1 text-secondary"></i></a>
               </div>
             </div>
           </div>
 
           <div class="col">
             <div class="card h-100">
-              <div class="card-body">
+              <div class="card-body text-center d-flex flex-column justify-content-center align-items-center">
                 <h5 class="card-title">ออกรายงาน (Reports)</h5>
                 <p class="card-text">สร้างรายงานสรุปข้อมูล</p>
+                <a href="#" class="btn btn-outline-secondary"><i class="bi bi-bar-chart-line fs-1 text-secondary"></i></a>
               </div>
             </div>
           </div>
