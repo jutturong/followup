@@ -18,6 +18,7 @@
         "vite": "^7.0.4"
     },
     "dependencies": {
+        "@fontsource/prompt": "^5.2.6",
         "bootstrap-icons": "^1.13.1"
     }
 }

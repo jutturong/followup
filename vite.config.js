@@ -15,5 +15,9 @@
                 '~bootstrap': path.resolve(__dirname, 'node_modules/bootstrap'),
             }
         },
-        
+        server: {
+        host: '0.0.0.0',
+        port: 5174, // เปลี่ยนพอร์ตตรงนี้
+        strictPort: true
+    }
     });
