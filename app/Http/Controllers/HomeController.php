@@ -30,6 +30,7 @@ class HomeController extends Controller
         return [
             'group' => 'Strategic Planning Group (กลุ่มแผนงานยุทธศาสตร์)',
             'iconGroup' => 'bi bi-database-fill-gear fs-2',
+            'id'=>'headingOne',
             'menus' => [
                 [
                     'title' => 'เพิ่มข้อมูล',
@@ -67,6 +68,7 @@ class HomeController extends Controller
         return [
             'group' => 'ผู้รับผิดชอบโครงการ (Project Manager)',
             'iconGroup' => 'bi bi-person-plus-fill fs-2',
+            'id' => 'headingTwo',
             'menus' => [
                 [
                     'title' => 'เพิ่มข้อมูลโครงการ',
@@ -98,6 +100,7 @@ class HomeController extends Controller
         return [
             'group' => 'บัญชีและการเงิน (Accounting and Finance)',
             'iconGroup' => 'bi bi-coin fs-2 fs-2',
+            'id' => 'headingThree',
             'menus' => [
                 [
                     'title' => 'ตรวจสอบสถานะ/Timeline',
