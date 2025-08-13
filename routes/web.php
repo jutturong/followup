@@ -15,6 +15,7 @@ use App\Http\Controllers\HomeController;
 // });
 
 Route::get('/', [HomeController::class, 'index']);
+// Route::get('/home', [HomeController::class, 'index']);
 
 // Route::get('/hello', function () {
 //     // return view('about');

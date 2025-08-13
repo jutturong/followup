@@ -1,6 +1,19 @@
 @extends('layouts.app')
 
-@section('title', 'หน้าหลัก')
+@section('title', 'หน้าแรก')
+
+{{-- @section('breadcrumb')
+    <li class="breadcrumb-item"><a href="{{ route('home') }}">Home</a></li>
+    <li class="breadcrumb-item active" aria-current="page">Dashboard</li>
+@endsection --}}
+{{-- @section('breadcrumb')
+    <li class="breadcrumb-item"><a href="{{ route('home') }}">Home</a></li>
+    <li class="breadcrumb-item active" aria-current="page">Dashboard</li>
+@endsection --}}
+{{-- @section('breadcrumb')
+    <li class="breadcrumb-item"><a href="{{ route('home') }}">Home</a></li>
+    <li class="breadcrumb-item active" aria-current="page">Dashboard</li>
+@endsection --}}
 
 @section('content')
 
