@@ -9,6 +9,7 @@
   {{-- Administrator --}}
   <div class="accordion-item">
     <h2 class="accordion-header" id="headingOne">
+      <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne">
       <i class="bi bi-database-fill-gear fs-2"></i> &nbsp; Strategic Planning Group (กลุ่มแผนงานยุทธศาสตร์)
       </button>
     </h2>
