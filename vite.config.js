@@ -1,23 +1,18 @@
-    // vite.config.js
-    import { defineConfig } from 'vite';
-    import laravel from 'laravel-vite-plugin';
-    import path from 'path'; // Import the path module
+import { defineConfig } from 'vite';
+import laravel from 'laravel-vite-plugin';
 
-    export default defineConfig({
-        plugins: [
-            laravel({
-                input: ['resources/scss/app.scss', 'resources/js/app.js'],
-                refresh: true,
-            }),
-        ],
-        resolve: {
-            alias: {
-                '~bootstrap': path.resolve(__dirname, 'node_modules/bootstrap'),
-            }
+export default defineConfig({
+    server: {
+        host: '0.0.0.0',    // ให้ Vite ฟังทุก interface ของ container
+        port: 5173,          // port default
+        hmr: {
+            host: 'localhost',   // ให้ browser เชื่อม HMR ผ่าน localhost
         },
-        server: {
-        host: '0.0.0.0',
-        port: 5174, // เปลี่ยนพอร์ตตรงนี้
-        strictPort: true
-    }
-    });
+    },
+    plugins: [
+        laravel({
+            input: ['resources/css/app.css', 'resources/js/app.js'],
+            refresh: true,
+        }),
+    ],
+});

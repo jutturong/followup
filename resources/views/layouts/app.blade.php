@@ -4,7 +4,9 @@
     <meta charset="UTF-8">
     <title>@yield('title', 'Followup Project AGKKU')</title>
     {{-- <link href="https://fonts.googleapis.com/css2?family=Prompt:wght@300;400;500;600;700&display=swap" rel="stylesheet"> --}}
-    @vite(['resources/scss/app.scss', 'resources/js/app.js'])
+    {{-- @vite(['resources/scss/app.scss', 'resources/js/app.js']) --}}
+    @vite(['resources/css/app.css', 'resources/js/app.js'])
+
     {{-- <link rel="stylesheet" href="{{ asset('node_modules/bootstrap-icons/font/bootstrap-icons.css') }}"> --}}
 
 </head>
