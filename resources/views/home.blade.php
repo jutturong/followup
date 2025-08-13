@@ -7,7 +7,7 @@
     <div class="accordion" id="accordionExample">
 
          {{-- Administrator Strategic Planning Group (กลุ่มแผนงานยุทธศาสตร์) --}}
-        @include('mainmenu.admin', ['menusCompo1' => $menusCompo1])
+        @include('mainmenu.admin', ['menusCompo1' => $getMenusStrategic])
 
         {{-- ผู้รับผิดชอบโครงการ  Projectmanager --}}
         @include('mainmenu.admin', ['menusCompo1' => $projectmanage])

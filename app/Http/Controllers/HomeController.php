@@ -17,7 +17,7 @@ class HomeController extends Controller
     public function index()
     {
         return view('home', [
-            'menusCompo1'   => $this->getMenusCompo1(),
+            'getMenusStrategic'   => $this->getMenusStrategic(),
             'projectmanage' => $this->getMenusProjectManage(),
             'menusFinance'  => $this->getMenusFinance(),
             'menusExecutive' => $this->getMenusExecutive()
@@ -26,7 +26,7 @@ class HomeController extends Controller
 
 
     // ฟังก์ชันสำหรับสร้างเมนู Strategic Planning Group
-    private function getMenusCompo1()
+    private function getMenusStrategic()
     {
         return [
             'group' => 'Strategic Planning Group (กลุ่มแผนงานยุทธศาสตร์)',
@@ -35,9 +35,23 @@ class HomeController extends Controller
             'menus' => [
                 [
                     'title' => 'เพิ่มข้อมูล',
-                    'text' => 'จัดการเพิ่มข้อมูลใหม่',
+                    'text' => 'เพิ่มข้อมูลโครงการหลัก',
                     'icon' => 'bi-folder-plus',
                     'color' => 'primary',
+                    'url' => '#'
+                ],
+                [
+                    'title' => 'เพิ่มข้อมูล',
+                    'text' => 'เพิ่มข้อมูลแผนปฏิบัติการ มข.',
+                    'icon' => 'bi-folder-plus',
+                    'color' => 'info',
+                    'url' => '#'
+                ],
+                [
+                    'title' => 'เพิ่มข้อมูล',
+                    'text' => 'ตัววัดสำคัญคณะเกษตรศาสตร์',
+                    'icon' => 'bi-folder-plus',
+                    'color' => 'info',
                     'url' => '#'
                 ],
                 [
@@ -64,6 +78,44 @@ class HomeController extends Controller
             ]
         ];
     }
+    // private function getMenusCompo1()
+    // {
+    //     return [
+    //         'group' => 'Strategic Planning Group (กลุ่มแผนงานยุทธศาสตร์)',
+    //         'iconGroup' => 'bi bi-database-fill-gear fs-2',
+    //         'id' => 'headingOne',
+    //         'menus' => [
+    //             [
+    //                 'title' => 'เพิ่มข้อมูล',
+    //                 'text' => 'จัดการเพิ่มข้อมูลใหม่',
+    //                 'icon' => 'bi-folder-plus',
+    //                 'color' => 'primary',
+    //                 'url' => '#'
+    //             ],
+    //             [
+    //                 'title' => 'กำหนดสิทธิ์การใช้งาน',
+    //                 'text' => 'จัดการสิทธิ์และบทบาทผู้ใช้งาน',
+    //                 'icon' => 'bi-gear',
+    //                 'color' => 'secondary',
+    //                 'url' => '#'
+    //             ],
+    //             [
+    //                 'title' => 'ตรวจสอบสถานะ Timeline',
+    //                 'text' => 'ติดตามความคืบหน้าของโครงการ',
+    //                 'icon' => 'bi-binoculars',
+    //                 'color' => 'secondary',
+    //                 'url' => '#'
+    //             ],
+    //             [
+    //                 'title' => 'ออกรายงาน (Reports)',
+    //                 'text' => 'สร้างรายงานสรุปข้อมูล',
+    //                 'icon' => 'bi-bar-chart-line',
+    //                 'color' => 'secondary',
+    //                 'url' => '#'
+    //             ]
+    //         ]
+    //     ];
+    // }
     private function getMenusProjectManage()
     {
         return [
