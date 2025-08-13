@@ -2,7 +2,7 @@
         <div class="accordion-item">
             <h2 class="accordion-header" id="headingOne">
                 <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne">
-                    <i class="bi bi-database-fill-gear fs-2"></i> &nbsp; {{ $menusCompo1['group'] }}
+                    <i class="{{ $menusCompo1['iconGroup'] }}"></i> &nbsp; {{ $menusCompo1['group'] }}
                 </button>
             </h2>
             <div id="collapseOne" class="accordion-collapse collapse show">
