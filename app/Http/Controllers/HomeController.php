@@ -6,13 +6,23 @@ use Illuminate\Http\Request;
 
 class HomeController extends Controller
 {
+    // public function index()
+    // {
+    //     $menusCompo1 = $this->getMenusCompo1();
+    //     $projectmanage = $this->getMenusProjectManage();
+    //     $getMenusFinance = $this->getMenusFinance();
+    //     return view('home', compact('menusCompo1', 'projectmanage'));
+    //     return view('home', ['menusCompo1' => $menusCompo1, 'projectmanage' => $projectmanage]);
+    // }
     public function index()
     {
-        $menusCompo1 = $this->getMenusCompo1();
-        $projectmanage = $this->getMenusProjectManage();
-        return view('home', compact('menusCompo1', 'projectmanage'));
-        return view('home', ['menusCompo1' => $menusCompo1, 'projectmanage' => $projectmanage]);
+        return view('home', [
+            'menusCompo1'   => $this->getMenusCompo1(),
+            'projectmanage' => $this->getMenusProjectManage(),
+            'menusFinance'  => $this->getMenusFinance()
+        ]);
     }
+
 
     // ฟังก์ชันสำหรับสร้างเมนู Strategic Planning Group
     private function getMenusCompo1()
@@ -80,6 +90,31 @@ class HomeController extends Controller
                     'url' => '#'
                 ],
                
+            ]
+        ];
+    }
+    private function getMenusFinance()
+    {
+        return [
+            'group' => 'บัญชีและการเงิน (Accounting and Finance)',
+            'iconGroup' => 'bi bi-coin fs-2 fs-2',
+            'menus' => [
+                [
+                    'title' => 'ตรวจสอบสถานะ/Timeline',
+                    'text' => 'ติดตามความคืบหน้าของโครงการ',
+                    'icon' => 'bi-binoculars',
+                    'color' => 'secondary',
+                    'url' => '#'
+                ],
+                [
+                    'title' => 'ออกรายงาน/Over View',
+                    'text' => 'จัดการสิทธิ์และบทบาทผู้ใช้งาน',
+                    'icon' => 'bi-bar-chart-line',
+                    'color' => 'secondary',
+                    'url' => '#'
+                ],
+                
+
             ]
         ];
     }

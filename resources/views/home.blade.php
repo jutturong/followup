@@ -9,11 +9,12 @@
          {{-- Administrator Strategic Planning Group (กลุ่มแผนงานยุทธศาสตร์) --}}
         @include('mainmenu.admin', ['menusCompo1' => $menusCompo1])
 
-        {{-- ผู้รับผิดชอบโครงการ  --}}
+        {{-- ผู้รับผิดชอบโครงการ  Projectmanager --}}
         @include('mainmenu.admin', ['menusCompo1' => $projectmanage])
 
         {{-- บัญชีและการเงิน --}}
-        <div class="accordion-item">
+        @include('mainmenu.admin', ['menusCompo1' => $menusFinance])
+        {{-- <div class="accordion-item">
             <h2 class="accordion-header" id="headingThree">
                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                     data-bs-target="#collapseThree">
@@ -25,7 +26,7 @@
                     เนื้อหาสำหรับบัญชีและการเงิน
                 </div>
             </div>
-        </div>
+        </div> --}}
 
     </div>
 
