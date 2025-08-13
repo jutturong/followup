@@ -27,6 +27,8 @@
                 </div>
             </div>
         </div> --}}
+         {{-- ผู้บริหาร --}}
+        @include('mainmenu.admin', ['menusCompo1' => $menusExecutive])
 
     </div>
 

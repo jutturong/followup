@@ -19,7 +19,8 @@ class HomeController extends Controller
         return view('home', [
             'menusCompo1'   => $this->getMenusCompo1(),
             'projectmanage' => $this->getMenusProjectManage(),
-            'menusFinance'  => $this->getMenusFinance()
+            'menusFinance'  => $this->getMenusFinance(),
+            'menusExecutive' => $this->getMenusExecutive()
         ]);
     }
 
@@ -117,6 +118,33 @@ class HomeController extends Controller
                     'url' => '#'
                 ],
                 
+
+            ]
+        ];
+    }
+
+    private function getMenusExecutive()
+    {
+        return [
+            'group' => 'ผู้บริหาร (executive)',
+            'iconGroup' => 'bi bi-gem fs-2 fs-2',
+            'id' => 'headingFour',
+            'menus' => [
+                [
+                    'title' => 'ตรวจสอบสถานะ/Timeline',
+                    'text' => 'ติดตามความคืบหน้าของโครงการ',
+                    'icon' => 'bi-binoculars',
+                    'color' => 'secondary',
+                    'url' => '#'
+                ],
+                [
+                    'title' => 'Dashboard/รายงาน',
+                    'text' => 'จัดการสิทธิ์และบทบาทผู้ใช้งาน',
+                    'icon' => 'bi-bar-chart-line',
+                    'color' => 'secondary',
+                    'url' => '#'
+                ],
+
 
             ]
         ];
