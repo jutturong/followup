@@ -5,11 +5,17 @@
     <title>@yield('title', 'Followup Project AGKKU')</title>
     {{-- <link href="https://fonts.googleapis.com/css2?family=Prompt:wght@300;400;500;600;700&display=swap" rel="stylesheet"> --}}
     {{-- @vite(['resources/scss/app.scss', 'resources/js/app.js']) --}}
-    @vite(['resources/css/app.css', 'resources/js/app.js'])
+    @vite(['resources/css/app.scss', 'resources/js/app.js'])
+    {{-- @vite('resources/css/webfonts.css') --}}
 
+    {{-- @vite('webfonts.css') --}}
     {{-- <link rel="stylesheet" href="{{ asset('node_modules/bootstrap-icons/font/bootstrap-icons.css') }}"> --}}
 
-</head>
+{{-- @googlefonts('prompt') --}}
+{{-- </head>
+<head> --}}
+    {{-- <link href="https://fonts.googleapis.com/css2?family=Prompt:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+</head> --}}
 <body>
 
     {{-- Header --}}

@@ -15,7 +15,8 @@
         "laravel-vite-plugin": "^2.0.0",
         "sass": "^1.56.1",
         "tailwindcss": "^4.0.0",
-        "vite": "^7.0.4"
+        "vite": "^7.0.4",
+        "vite-plugin-webfont-dl": "^3.11.1"
     },
     "dependencies": {
         "@fontsource/prompt": "^5.2.6",
