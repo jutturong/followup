@@ -32,12 +32,12 @@
     </nav>
 
     {{-- Content --}}
-    <main class="container-fluid py-4">
+    <main class="container-fluid py-2">
         @yield('content')
     </main>
 
     {{-- Footer --}}
-    <footer class="bg-dark text-light py-3 mt-4">
+    <footer class="bg-dark text-light py-2 mt-2">
         <div class="container text-center">
             <small>&copy; {{ date('Y') }} Followup Project AGKKU. All rights reserved.</small>
         </div>

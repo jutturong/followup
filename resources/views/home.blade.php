@@ -14,19 +14,7 @@
 
         {{-- บัญชีและการเงิน --}}
         @include('mainmenu.admin', ['menusCompo1' => $menusFinance])
-        {{-- <div class="accordion-item">
-            <h2 class="accordion-header" id="headingThree">
-                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#collapseThree">
-                    <i class="bi bi-coin fs-2"></i> &nbsp; บัญชีและการเงิน
-                </button>
-            </h2>
-            <div id="collapseThree" class="accordion-collapse collapse">
-                <div class="accordion-body">
-                    เนื้อหาสำหรับบัญชีและการเงิน
-                </div>
-            </div>
-        </div> --}}
+       
          {{-- ผู้บริหาร --}}
         @include('mainmenu.admin', ['menusCompo1' => $menusExecutive])
 
