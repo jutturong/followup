@@ -17,33 +17,36 @@ class HomeController extends Controller
     private function getMenusCompo1()
     {
         return [
-            [
-                'title' => 'เพิ่มข้อมูล',
-                'text' => 'จัดการเพิ่มข้อมูลใหม่',
-                'icon' => 'bi-folder-plus',
-                'color' => 'primary',
-                'url' => '#'
-            ],
-            [
-                'title' => 'กำหนดสิทธิ์การใช้งาน',
-                'text' => 'จัดการสิทธิ์และบทบาทผู้ใช้งาน',
-                'icon' => 'bi-gear',
-                'color' => 'secondary',
-                'url' => '#'
-            ],
-            [
-                'title' => 'ตรวจสอบสถานะ Timeline',
-                'text' => 'ติดตามความคืบหน้าของโครงการ',
-                'icon' => 'bi-binoculars',
-                'color' => 'secondary',
-                'url' => '#'
-            ],
-            [
-                'title' => 'ออกรายงาน (Reports)',
-                'text' => 'สร้างรายงานสรุปข้อมูล',
-                'icon' => 'bi-bar-chart-line',
-                'color' => 'secondary',
-                'url' => '#'
+            'group' => 'Strategic Planning Group (กลุ่มแผนงานยุทธศาสตร์)',
+            'menus' => [
+                [
+                    'title' => 'เพิ่มข้อมูล',
+                    'text' => 'จัดการเพิ่มข้อมูลใหม่',
+                    'icon' => 'bi-folder-plus',
+                    'color' => 'primary',
+                    'url' => '#'
+                ],
+                [
+                    'title' => 'กำหนดสิทธิ์การใช้งาน',
+                    'text' => 'จัดการสิทธิ์และบทบาทผู้ใช้งาน',
+                    'icon' => 'bi-gear',
+                    'color' => 'secondary',
+                    'url' => '#'
+                ],
+                [
+                    'title' => 'ตรวจสอบสถานะ Timeline',
+                    'text' => 'ติดตามความคืบหน้าของโครงการ',
+                    'icon' => 'bi-binoculars',
+                    'color' => 'secondary',
+                    'url' => '#'
+                ],
+                [
+                    'title' => 'ออกรายงาน (Reports)',
+                    'text' => 'สร้างรายงานสรุปข้อมูล',
+                    'icon' => 'bi-bar-chart-line',
+                    'color' => 'secondary',
+                    'url' => '#'
+                ]
             ]
         ];
     }
