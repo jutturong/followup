@@ -6,7 +6,7 @@
 
     <div class="accordion" id="accordionExample">
 
-        {{-- Administrator Strategic Planning Group (กลุ่มแผนงานยุทธศาสตร์) --}}
+        {{-- Administrator Strategic Planning Group (กลุ่มแผนงานยุทธศาสตร์)
         <div class="accordion-item">
             <h2 class="accordion-header" id="headingOne">
                 <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne">
@@ -34,7 +34,9 @@
                     </div>
                 </div>
             </div>
-        </div>
+        </div> --}}
+        {{-- เรียกเมนู admin --}}
+        @include('mainmenu.admin', ['menusCompo1' => $menusCompo1])
 
         {{-- User --}}
         <div class="accordion-item">
