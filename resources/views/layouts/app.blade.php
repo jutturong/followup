@@ -8,20 +8,24 @@
    
 <body>
 
-{{-- navbar --}}
-{{-- @include('layouts.navbar',['brand' => 'Project-FollowUp','iconClass' => 'bi bi-check2-square fs-3','parent' => 'หน้าหลัก','labelsr'=>'ค้นหา']) --}}
-{{-- navbar --}}
 @include('layouts.navbar', [
     'brand' => 'Project-FollowUp',
-    'iconClass' => 'bi bi-check2-square fs-3',
+    'iconClass' => 'bi bi-person-rolodex me-1 fs-3',
     'parent' => View::getSections()['navbar_parent'] ?? 'หน้าหลัก',
-    'labelsr' => View::getSections()['navbar_labelsr'] ?? 'ค้นหา'
+    'labelsr' => View::getSections()['navbar_labelsr'] ?? 'ค้นหา',
+    'iconlogout' => View::hasSection('iconlogout') ? View::yieldContent('iconlogout') : null
 ])
 
-
-<!-- Breadcrumb -->
-@include('layouts.breadcrumb', ['parent' => 'Home', 'page' => 'Dashboard'])
-
+{{-- breadcrumb --}}
+{{-- @include('layouts.breadcrumb', [
+    'parent' => View::getSections()['breadcrumb_parent'] ?? 'Home',
+    'page'   => View::getSections()['breadcrumb_page'] ?? 'Dashboard'
+]) --}}
+{{-- Breadcrumb --}}
+@include('layouts.breadcrumb', [
+    'parent' => View::hasSection('breadcrumb_parent') ? View::yieldContent('breadcrumb_parent') : null,
+    'page'   => View::hasSection('breadcrumb_page') ? View::yieldContent('breadcrumb_page') : null
+])
 
     {{-- Content --}}
     <main class="container-fluid py-2">
@@ -29,14 +33,12 @@
     </main>
 
     {{-- Footer --}}
-    {{-- <footer class="bg-dark text-light py-2 mt-2">
-        <div class="container text-center">
-            <small>&copy; {{ date('Y') }} Followup Project AGKKU. All rights reserved.</small>
-        </div>
-    </footer> --}}
-    @include('layouts.footer',['brand' => 'หน่วยโสตและสารสนเทศ Audiovisual and Information Technology Unit ห้อง 8013 , โทร 45303'])
+   {{-- @include('layouts.footer', ['brand' => View::hasSection('footer-brand') ? View::yieldContent('footer-brand') : null]) --}}
 
-    {{-- Scripts --}}
+{{-- Footer --}}
+@include('layouts.footer', [
+    'brand' => View::hasSection('footer-brand') ? View::yieldContent('footer-brand') : null
+])
 
 </body>
 </html>

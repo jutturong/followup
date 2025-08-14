@@ -26,7 +26,7 @@
 
         <!-- ปุ่ม Logout -->
         <a href="#" class="btn btn-warning d-flex align-items-center">
-          <i class="bi bi-unlock me-1"></i> Logout
+          <i class="{{ $iconlogout ?? 'bi bi-bag-x' }}"></i> Logout
         </a>
       </div>
     </div>

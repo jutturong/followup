@@ -2,8 +2,12 @@
 
 @section('title', 'หน้าหลัก')
 
-@section('navbar_parent', 'หน้าจัดการโครงการ')
+@section('navbar_parent', 'Home')
 @section('navbar_labelsr', 'ค้นหาโครงการ')
+@section('iconlogout', 'bi bi-person-x-fill me-2 fs-3')
+
+@section('breadcrumb_parent', 'หน้าแรก')
+@section('breadcrumb_page', 'เมนูหลัก')
 
 @section('content')
 
@@ -24,3 +28,5 @@
     </div>
 
 @endsection
+
+@section('footer-brand', 'หน่วยโสตและสารสนเทศ Audiovisual and Information Technology Unit ห้อง 8013 โทร 45303')
