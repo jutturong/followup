@@ -16,6 +16,7 @@ use App\Http\Controllers\HomeController;
 
 Route::get('/', [HomeController::class, 'index']);
 
+Route::get('/logout', [HomeController::class, 'index']);
 // Route::get('/hello', function () {
 //     // return view('about');
 //     return 'สวัสดีชาวโลก';

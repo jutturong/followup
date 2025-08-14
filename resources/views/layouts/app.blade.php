@@ -35,7 +35,7 @@
     </div>
   </div>
 </nav> --}}
-@include('layouts.navbar',['brand' => 'Project Followup','iconClass' => 'bi bi-check2-square fs-3','parent' => 'หน้าหลัก','labelsr'=>'ค้นหา'])
+@include('layouts.navbar',['brand' => 'Project-FollowUp','iconClass' => 'bi bi-check2-square fs-3','parent' => 'หน้าหลัก','labelsr'=>'ค้นหา'])
 
 <!-- Breadcrumb -->
 @include('layouts.breadcrumb', ['parent' => 'Home', 'page' => 'Dashboard'])
@@ -47,11 +47,14 @@
     </main>
 
     {{-- Footer --}}
-    <footer class="bg-dark text-light py-2 mt-2">
+    {{-- <footer class="bg-dark text-light py-2 mt-2">
         <div class="container text-center">
             <small>&copy; {{ date('Y') }} Followup Project AGKKU. All rights reserved.</small>
         </div>
-    </footer>
+    </footer> --}}
+    @include('layouts.footer',['brand' => 'หน่วยโสตและสารสนเทศ Audiovisual and Information Technology Unit ห้อง 8013 , โทร 45303'])
+
+    {{-- Scripts --}}
 
 </body>
 </html>
