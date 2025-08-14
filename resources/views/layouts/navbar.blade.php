@@ -1,14 +1,4 @@
-<!DOCTYPE html>
-<html lang="th">
-<head>
-    <meta charset="UTF-8">
-    <title>@yield('title', 'Followup Project AGKKU')</title>
-    
-    @vite(['resources/css/app.scss', 'resources/js/app.js'])
-   
-<body>
-
-    {{-- Header --}}
+{{-- Header --}}
 <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
   <div class="container-fluid">
     <a class="navbar-brand" href="#">Project Followup</a>
@@ -35,22 +25,3 @@
     </div>
   </div>
 </nav>
-
-<!-- Breadcrumb -->
-@include('layouts.breadcrumb', ['parent' => 'Home', 'page' => 'Dashboard'])
-
-
-    {{-- Content --}}
-    <main class="container-fluid py-2">
-        @yield('content')
-    </main>
-
-    {{-- Footer --}}
-    <footer class="bg-dark text-light py-2 mt-2">
-        <div class="container text-center">
-            <small>&copy; {{ date('Y') }} Followup Project AGKKU. All rights reserved.</small>
-        </div>
-    </footer>
-
-</body>
-</html>
