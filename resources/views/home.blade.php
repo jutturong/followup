@@ -2,6 +2,9 @@
 
 @section('title', 'หน้าหลัก')
 
+@section('navbar_parent', 'หน้าจัดการโครงการ')
+@section('navbar_labelsr', 'ค้นหาโครงการ')
+
 @section('content')
 
     <div class="accordion" id="accordionExample">
