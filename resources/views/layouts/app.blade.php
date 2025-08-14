@@ -9,7 +9,7 @@
 <body>
 
     {{-- Header --}}
-<nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+{{-- <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
   <div class="container-fluid">
     <a class="navbar-brand" href="#">Project Followup</a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarMain" aria-controls="navbarMain" aria-expanded="false" aria-label="Toggle navigation">
@@ -34,7 +34,8 @@
       </form>
     </div>
   </div>
-</nav>
+</nav> --}}
+@include('layouts.navbar')
 
 <!-- Breadcrumb -->
 @include('layouts.breadcrumb', ['parent' => 'Home', 'page' => 'Dashboard'])
