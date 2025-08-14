@@ -7,16 +7,16 @@
     <div class="accordion" id="accordionExample">
 
          {{-- Administrator Strategic Planning Group (กลุ่มแผนงานยุทธศาสตร์) --}}
-        @include('mainmenu.admin', ['menusCompo1' => $getMenusStrategic])
+        @include('mainmenu.mainmenu', ['menusCompo1' => $getMenusStrategic])
 
         {{-- ผู้รับผิดชอบโครงการ  Projectmanager --}}
-        @include('mainmenu.admin', ['menusCompo1' => $projectmanage])
+        @include('mainmenu.mainmenu', ['menusCompo1' => $projectmanage])
 
         {{-- บัญชีและการเงิน --}}
-        @include('mainmenu.admin', ['menusCompo1' => $menusFinance])
+        @include('mainmenu.mainmenu', ['menusCompo1' => $menusFinance])
        
          {{-- ผู้บริหาร --}}
-        @include('mainmenu.admin', ['menusCompo1' => $menusExecutive])
+        @include('mainmenu.mainmenu', ['menusCompo1' => $menusExecutive])
 
     </div>
 
