@@ -11,22 +11,13 @@
 @import "bootstrap/scss/bootstrap";
 @import "bootstrap/scss/bootstrap-utilities";
 @import 'bootstrap/dist/css/bootstrap.min.css';
-// @import 'bootstrap-icons/font/bootstrap-icons.css';
-
-@import "@fontsource/prompt"; /* น้ำหนักปกติ */
-@import "@fontsource/prompt/500.css"; /* ตัวหนา */
-@import "@fontsource/prompt/700.css"; /* ตัวหนามาก */
-
-body {
-    font-family: 'Prompt', sans-serif;
-}
-
 @import "bootstrap-icons/font/bootstrap-icons.css";
 
-@import "@fontsource/prompt/400.css"; /* น้ำหนักปกติ */
-@import "@fontsource/prompt/500.css"; /* น้ำหนักกลาง */
-@import "@fontsource/prompt/700.css"; /* น้ำหนักหนา */
-
+/* น้ำหนักปกติ */
+@import "@fontsource/prompt/400.css";
+/* ตัวหนา */
+@import "@fontsource/prompt/500.css";
+@import "@fontsource/prompt/700.css";
 
 body {
     font-family: 'Prompt', sans-serif;
