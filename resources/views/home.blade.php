@@ -2,6 +2,10 @@
 
 @section('title', 'หน้าหลัก')
 
+@section('breadcrumb')
+    @include('layouts.breadcrumb', ['parent' => 'หน้าหลัก', 'page' => 'Library'])
+@endsection
+
 @section('content')
 
     <div class="accordion" id="accordionExample">

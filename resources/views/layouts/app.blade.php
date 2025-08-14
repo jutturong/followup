@@ -37,15 +37,10 @@
 </nav>
 
 <!-- Breadcrumb -->
-<nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb" class="bg-light py-2">
-  <div class="container-fluid">
-    <ol class="breadcrumb mb-0">
-      <li class="breadcrumb-item"><a href="#">Home</a></li>
-      <li class="breadcrumb-item active" aria-current="page">Library</li>
-    </ol>
-  </div>
-</nav>
+{{-- @include('layouts.breadcrumb', ['parent' => 'หน้าหลัก', 'page' => 'Library']) --}}
+@yield('breadcrumb')
 
+{{-- @extends('breadcrumb'); --}}
 
     {{-- Content --}}
     <main class="container-fluid py-2">
