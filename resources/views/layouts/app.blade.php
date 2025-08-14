@@ -35,7 +35,7 @@
     </div>
   </div>
 </nav> --}}
-@include('layouts.navbar')
+@include('layouts.navbar',['brand' => 'Project Followup','iconClass' => 'bi bi-check2-square fs-3','parent' => 'หน้าหลัก','labelsr'=>'ค้นหา'])
 
 <!-- Breadcrumb -->
 @include('layouts.breadcrumb', ['parent' => 'Home', 'page' => 'Dashboard'])
