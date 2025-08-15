@@ -28,3 +28,20 @@ Thumbs.db
 .env copy
 .envbackupAGDB
 .envdefault
+# Ignore fonts folder
+public/fonts/
+# Ignore sarabun fonts
+public/fonts/sarabun/
+# Ignore font files
+*.ttf
+*.otf
+*.woff
+*.woff2
+*.eot
+# Ignore fonts folder and font files
+public/fonts/
+*.ttf
+*.otf
+*.woff
+*.woff2
+*.eot
