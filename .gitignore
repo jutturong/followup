@@ -1,50 +1,30 @@
-*.log
-.DS_Store
-.env
-.env.backup
-.env copy
-.env.example
-.env.production
-.phpactor.json
-.phpunit.result.cache
-/.fleet
-/.idea
-/.nova
-/.phpunit.cache
-/.vscode
-/.zed
-/auth.json
+# Laravel & PHP
+/vendor
 /node_modules
-/public/build
-/public/hot
 /public/storage
 /storage/*.key
-/storage/pail
-/vendor
+.env
+.phpunit.result.cache
 Homestead.json
 Homestead.yaml
-Thumbs.db
-.env copy 2
-.env copy
-.envbackupAGDB
-.envdefault
-# Ignore fonts folder
-public/fonts/
-# Ignore sarabun fonts
-public/fonts/sarabun/
-# Ignore font files
-*.ttf
-*.otf
-*.woff
-*.woff2
-*.eot
-# Ignore fonts folder and font files
-public/fonts/
-*.ttf
-*.otf
-*.woff
-*.woff2
-*.eot
+npm-debug.log
+yarn-error.log
+.env.backup
+.env.local
 
-docker-compose copy.yml
-.env.example
+# Laravel Sail (Docker)
+docker-compose.override.yml
+sail
+.sail
+
+# IDE / OS
+.idea
+.vscode
+*.swp
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+/storage/logs/*
+/bootstrap/cache/*.php
