@@ -47,3 +47,4 @@ public/fonts/
 *.eot
 
 docker-compose copy.yml
+.env.example
