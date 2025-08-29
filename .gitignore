@@ -45,3 +45,5 @@ public/fonts/
 *.woff
 *.woff2
 *.eot
+
+docker-compose copy.yml
